@@ -26,3 +26,6 @@ jobs:
     - name: Maker Web
       run: |
         python main.py
+        git add .
+        git commit -am "New Pages"
+        git push 
