@@ -13,7 +13,7 @@ def maker():
         cst = i["Custom_Markdown"]
         path = pathlib.Path("./docs/"+repo)
         if not path.is_dir():
-            os.system(f"mkdir ./docs/{repo}")
+            os.mkdir(path)
         with open(f"./docs/{repo}/index.md",mode="w",encoding="utf-8") as f:
             md = f"# 项目名 {pname}  \n## 拥有者 [{oname}]({ourl})  \n## 项目地址 [{repo}]({purl})  \n{cst}"      
             f.write(md)
