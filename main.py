@@ -1,4 +1,3 @@
-from Web import Jinjia
-a  = Jinjia.MakeWeb()
-a.run()
+from docs import Maker
+Maker.maker()
 # 模板
