@@ -14,6 +14,7 @@ def maker():
             md = f"# 项目名 {pname}  \n## 拥有者 [{oname}]({ourl})  \n## 项目地址 [{repo}]({purl})  \n{cst}"      
             f.write(md)
         with open("./docs/Readme.md",mode="a") as f:
-            if repo not in f.read():
+            qwq = f.read()
+            if repo not in qwq:
                 f.write(f"[{repo}](/{oname+'-'+pname})  \n")
                 
