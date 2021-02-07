@@ -10,7 +10,7 @@ def maker():
         repo = i["Repo"]
         ourl = i["Owner_Url"]
         cst = i["Custom_Markdown"]
-        os.mkdir(f"./docs/{repo})
+        os.mkdir(f"./docs/{repo}")
         with open(f"./docs/{repo}/index.md",mode="w",encoding="utf-8") as f:
             md = f"# 项目名 {pname}  \n## 拥有者 [{oname}]({ourl})  \n## 项目地址 [{repo}]({purl})  \n{cst}"      
             f.write(md)
