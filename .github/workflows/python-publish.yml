@@ -26,6 +26,8 @@ jobs:
     - name: Maker Web
       run: |
         python main.py
+        git config user.email "2544704967@qq.com"
+        git config user.name "YangNian"
         git add .
         git commit -am "New Pages"
         git push 
