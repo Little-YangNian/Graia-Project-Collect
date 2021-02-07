@@ -11,7 +11,7 @@ def maker():
         repo = i["Repo"]
         ourl = i["Owner_Url"]
         cst = i["Custom_Markdown"]
-        path = pathlib.Path("./docs/"+repo)
+        path = pathlib.Path("./docs/"+repo+"/")
         if not path.is_dir():
             os.mkdir(path)
         with open(f"./docs/{repo}/index.md",mode="w",encoding="utf-8") as f:
